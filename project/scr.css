@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:1rem solid rgb(82, 178, 193, 0.651);
+}
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 3.5rem;
+    color: black;
+}
+.header{
+    position:fixed;
+    top:0;left:0;right:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 9%;
+    background:rgb(82, 178, 193, 0.651);
+   
+}
+.header h1{
+    font-size: 30px;
+    color: rgb(5, 5, 30);
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(247, 161, 76);
+}
+.header nav a{
+    font-size:20px;
+    margin:20px;
+    color:black;
+}
+.header nav a:hover{
+    color: rgb(250, 211, 218);
+
+}
+.header .icons div{
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+}
+.header .icons div:hover{
+    background: rgb(250, 211, 218);
+    color: #000;
+}
+#menu-btn{
+    display:none;
+}
+.header .search-form{
+    position:absolute;
+    top: 110%; right:-110%;
+    width:50rem;
+    height:5rem;
+    background:#fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-form.active{
+    right:2rem;
+    transition: .1s linear;
+}
+
+.header .search-form input{
+    height: 100%;
+    width:100%;
+    background:none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:black;
+    padding: 1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:black;
+    cursor: pointer;
+}
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:30rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header .login-form .box{
+    margin:.7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a{
+    color: navy;
+    text-decoration: underline;
+
+}
+.Home{
+    background: url(singer3.jpg) no-repeat;
+    padding-top: 15rem;
+    padding-bottom: 50rem;
+    background-position: center;
+    background-size: cover;
+}
+.Home .content{
+    width:10rem; 
+    margin-right: auto;
+}
+.Home .content p{
+    color: #000;
+    font-size: 50px;
+    margin-left: auto;
+    text-align: center;
+}
+.Artist .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    background-color: rgb(250, 211, 218);
+}
+.Artist{
+    background-color: rgb(250, 211, 218);
+}
+.Artist .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+   
+}
+.Artist .box-container .box:hover{
+    outline: var(--outline-hover);
+    color: rgb(82, 178, 193, 0.651);
+}
+.Artist .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+}
+.Artist .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color:black;
+}
+.Library .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    background-color: rgb(250, 211, 218);
+}
+.Library{
+    background-color: rgb(250, 211, 218);
+}
+.Library .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.Library .box-container .box:hover{
+    outline: var(--outline-hover);
+}
+.Library .box-container .box h1{
+    font-size: 2rem;
+    line-height: 3;
+    color:black;
+}
+.About-us {
+    background:  rgb(250, 211, 218);
+}
+.About-us .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.About-us .box-container .box h2{
+    font-size: 2.5rem;
+    color:black;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(247, 161, 76); ;
+    
+}
+.About-us .box-container .box h3{
+    font-size: 2.5rem;
+    color:black;
+    
+}
+.About-us .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem ;
+}
+
+.About-us .box-container .box .links i{
+    padding-right: .5rem;
+}
+
+.About-us .box-container .box .links i:hover {
+    color: white;
+}
+
+.About-us .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 1rem 0;
+}
+
+.About-us .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.About-us .box-container .box .share a:hover{
+    background-color: rgb(16, 16, 77);
+    color: white;
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding :2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display:inline-block;
+    }
+    
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%;right:-110%;
+        width:30rem;
+        border-radius: .5rem;
+        background: #fff;
+         
+    }
+    
+    .header .navbar.active{
+        right:2rem;
+        transition: .1s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;    
+    
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+}
+
